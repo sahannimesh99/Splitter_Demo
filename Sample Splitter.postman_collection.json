@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "74ff67f1-20f9-4368-b3a8-4ee43780aa0b",
+		"name": "Sample Splitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Separate array splitter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"splitArray\": \"sahan|vany|Imal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sahan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sahan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "String to array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userCode\": \"TCSUSER1\",\r\n    \"errorCode\": \"0\",\r\n    \"errorMessage\": \"Cover Details Searched Successfully\",\r\n    \"sessionId\": \"hysyjYwFq3hRhNyFjSTnrs02nLrzy2P6twM8lQfp6ZTJH2tVmp3T!-292965451!1662562437584\",\r\n    \"actionEvent\": \"COVERDETAILSMOBILEAPI\",\r\n    \"roleCode\": \"SUPERUSER\",\r\n    \"policyno\": \"010317033\",\r\n    \"vname\": \"Basic Benefit | Critical Illness 29\",\r\n    \"vdesc\": \"Basic Benefit | Critical Illness 29\",\r\n    \"vlifeassured\": \"Mrs. H W H S ARIYASINGHA | Sahan\",\r\n    \"vcoveramount\": \"500000 | 1000\",\r\n    \"vdateofexpire\": \"05-JAN-38 | null\",\r\n    \"vclaimamt\": \"null | null \",\r\n    \"vcovercode\": \"STD-COVER | STD-COVER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sahan/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sahan",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
